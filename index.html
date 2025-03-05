@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>幸运卡牌占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg class="svg-defs">
+      <defs>
+        <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="title-wrapper">
+      <svg viewBox="0 0 500 100" class="art-title">
+        <text text-anchor="start" x="10" y="75" style="font-size:1.5em">今日运势占卜</text>
+      </svg>
+    </div>
+    <div class="cards-container">
+        <div class="card" onclick="drawCard(this)">
+            <div class="card-front"></div>
+            <div class="card-back">
+                <div class="fortune-result"></div>
+                <div class="blessing"></div>
+            </div>
+        </div>
+        <div class="card" onclick="drawCard(this)">
+            <div class="card-front"></div>
+            <div class="card-back">
+                <div class="fortune-result"></div>
+                <div class="blessing"></div>
+            </div>
+        </div>
+        <div class="card" onclick="drawCard(this)">
+            <div class="card-front"></div>
+            <div class="card-back">
+                <div class="fortune-result"></div>
+                <div class="blessing"></div>
+            </div>
+        </div>
+    </div>
+    <div class="result-panel">
+        <button onclick="resetCards()">重新占卜</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
